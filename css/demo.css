@@ -1,0 +1,346 @@
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,pre,table,form,input,textarea{
+    margin: 0;
+    padding: 0; 
+ }
+ body{
+     background-color: rgb(233, 232, 232);
+     font-size: 16px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ ul,ol,li{
+     list-style: none;
+ }
+ /* 去掉外部滚动条 */
+::-webkit-scrollbar{width: 0;height: 0;}
+ a{
+     color: #333;
+     text-decoration: none;
+ }
+header{
+    width: 100vw;
+    background: #222;
+    height: 43px;
+    margin:0 auto;
+    position: fixed;
+    top: 0;
+}
+header a{
+    color: #9d9d9d;
+}
+header a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.header-box{
+    width: 100%;
+    height: 43px;
+    padding: 0 10px;
+}
+.logo,.header-nav,.about{
+    display: none;
+}
+.xs-logo{
+    float: left;
+    line-height: 43px;
+}
+.iconsanheng{
+    float: right;
+    line-height: 18px;
+    border: 1px solid #444;
+    padding: 4px 10px;
+    margin: 8px 15px 8px 0;
+    border-radius: 4px;
+    color: #8D9D9D;
+}
+.iconsanheng:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.xs-list{
+    width: 100vw;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background: #222;
+    padding-left: 10px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: height 2s ease;
+}
+.iconsanheng:hover+.xs-list{
+    height: 220px;
+    visibility: visible;
+}
+.xs-list li a{
+    display: block;
+    font-size: 16px;
+    padding: 6px 0;
+    line-height: 24px;
+}
+nav{
+    width: 100vw;
+    background: linear-gradient(45deg,#020031,#6d3353);
+    padding: 90px 0 110px;
+    color: #fff;
+    margin: auto;
+}
+.nav-cont{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-cont h1{
+    width: 100vw;
+    height: 60px;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-top: 20px;
+}
+.nav-cont h2{
+    width: 100vw;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.25;
+    margin-top: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.nav-cont a{
+    display: block;
+    color: #fff;
+}
+.nav-cont a:nth-of-type(1){
+    width: 300px;
+    height: 54px;
+    margin: 20px auto;
+    padding: 13px 35px 17px 35px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    background-color: #337AB7;
+    box-shadow: inset 0 -4px 0 #23527c;
+    border: 0;
+    color: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.nav-cont a:nth-of-type(1):hover{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #286090;
+}
+
+.nav-cont a:nth-of-type(2){
+    font-size: 14px;
+    color: hsla(0,0%,100%,.5);
+    line-height: 2;
+}
+.nav-cont a:nth-of-type(2):hover{
+    text-decoration: underline;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+
+}
+article{
+    width: 100vw;
+    height: auto;
+    padding: 60px 15px 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+.con-head{
+    width: 65%;
+    text-align: center;
+    font-weight: 200;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+.con-head h2{
+    font-size: 30px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+    color: inherit;
+}
+.con-head p{
+    line-height: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.con-box{
+    width: 100vw;
+    margin: auto;
+}
+.con-list{
+    margin: 0 auto;
+    text-align: center;
+}
+.con-list::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.con-list li{
+    float: left;
+    width: 260px;
+    height: 367px;
+    border: 1px solid #eee;
+    padding: 4px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.con-list li .list-top{
+    display: block;
+    width: 100%;
+    height: 126px;
+    background: #563D7C;
+    color: #fff;
+    box-sizing: border-box;
+}
+.con-list li .list-top span{
+    display: block;
+    font-size: 28px;
+    padding-top: 20px;
+    letter-spacing: 5px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+.con-list li .list-top span:nth-of-type(2){
+    letter-spacing: 10px;
+    margin-top: -10px;
+}
+.con-list li .list-bottom{
+    height: 200px;
+    padding: 9px;
+    box-sizing: border-box;
+}
+.list-bottom a{
+    display: block;
+    height: 52.8px;
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+.list-bottom a span{
+    display: block;
+    color: #337AB7;
+}
+.list-bottom a span:nth-of-type(2){
+    font-size: 16px;
+    padding-top: 4px;
+    color: #777777;
+}
+.list-bottom p{
+    color: #555555;
+    text-indent: 0.5em;
+}
+.list-bottom a:hover span:nth-of-type(1){
+    color: #23527C;
+    transition: all 0.5s ease;
+}
+.iconarrow-up{
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+}
+@media screen and (min-width:700px){
+    .xs-logo,.xs-nav{
+        display: none;
+    }
+    header{
+        min-width: 700px;
+    }
+    .header-box{
+        width: 700px;
+        padding: 0 10px;
+        margin: auto;
+    }
+    .logo{
+        width: 164px;height: 100%;
+        float: left;
+    }
+    .logo a{
+        width: 100%;height: 100%;
+        line-height: 43px;
+        font-size: 18px;
+    }
+    .header-nav{
+        width: 670px;height: 100%;
+        margin: auto;
+        display: block;
+    }
+    .header-nav a{
+        float: left;
+        font-size: 14px;
+        height: 100%;
+        padding: 1.5%;
+    }
+    .about{
+        float: right;
+    }
+    .about a{
+        line-height: 43px;
+    }
+    .nav-cont h1{
+        font-size: 90px;
+        height: 89.6px;
+    }
+    .nav-cont h2{
+        font-size: 24px;
+        height: 29.6px;
+        letter-spacing: 0;
+    }
+    .con-head h2{
+        font-size: 42px;
+    }
+}
+@media screen and (min-width:970px){
+    header{
+        min-width: 970px;
+    }
+    .header-box{
+        width: 970px;
+        margin: auto;
+    }
+    .logo{
+        display: block;
+    }
+    .about{
+        display: block;
+    }
+    .header-nav{
+        display: block;
+        float: left;
+    }
+    .nav-cont h1{
+        font-size: 100px;
+        height: 100px;
+    }
+    .nav-cont h2{
+        font-size: 30px;
+        height: 36.8px;
+        letter-spacing: 0;
+    }
+    .con-head h2{
+        font-size: 42px;
+    }
+}
+@media screen and (min-width:1170px){
+    header{
+        min-width: 1170px;
+    }
+    .header-box{
+        width: 1170px;
+        margin: auto;
+    }
+}
